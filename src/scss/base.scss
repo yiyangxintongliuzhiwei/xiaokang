@@ -1,0 +1,98 @@
+@import '~@/scss/functions';
+@import '~@/scss/mixins';
+.router-link-active {
+  display: block;
+}
+.fb {
+  font-weight: bold;
+}
+.tc {
+  text-align: center;
+}
+.clearfix {
+  @include clearfix();
+}
+.icon {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  &.icon-home {
+    width: unit(34px);
+    height: unit(33px);
+    background-image: url('~@/assets/images/footer/icon-home.png');
+  }
+  &.icon-radio {
+    width: unit(32px);
+    height: unit(33px);
+    background-image: url('~@/assets/images/footer/icon-radio-station.png');
+  }
+  &.icon-course {
+    width: unit(32px);
+    height: unit(26px);
+    background-image: url('~@/assets/images/footer/icon-course.png');
+  }
+  &.icon-sport {
+    width: unit(30px);
+    height: unit(31px);
+    background-image: url('~@/assets/images/footer/icon-sports.png');
+  }
+  &.icon-library {
+    width: unit(34px);
+    height: unit(27px);
+    background-image: url('~@/assets/images/footer/icon-library.png');
+  }
+  &.icon-header-menu {
+    width: unit(51px);
+    height: unit(23px);
+    background-image: url('~@/assets/images/home/icon/icon-header-menu.png');
+  }
+  &.icon-sign-in {
+    width: unit(50px);
+    height: unit(51px);
+    background-image: url('~@/assets/images/home/icon/icon-sign-in.png');
+  }
+  &.icon-sign-in-green {
+    width: unit(69px);
+    height: unit(73px);
+    background-image: url('~@/assets/images/user-center/icon/icon-sign-in.png');
+  }
+  &.icon-news {
+    width: unit(60px);
+    height: unit(49px);
+    background-image: url('~@/assets/images/home/icon/icon-news.png');
+  }
+  &.icon-grade-gray {
+    width: unit(30px);
+    height: unit(20px);
+    background-image: url(~@/assets/images/user-center/icon/icon-grade-gray.png);
+  }
+  &.icon-grade-3 {
+    width: unit(79px);
+    height: unit(19px);
+    background-image: url(~@/assets/images/user-center/icon/icon-grade-3.png);
+  }
+}
+// body的背景色
+body {
+  &.bg-body-user-center {
+    height: 100%;
+    background-image: url('~@/assets/images/user-center/bg-user-center.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #6ebb31;
+  }
+  &.bg-body-home {
+    height: 100%;
+    background-image: url('~@/assets/images/home/bg-home.jpg');
+    background-repeat: no-repeat;
+  }
+  &.bg-body-honor {
+    height: 100%;
+    background-image: url('~@/assets/images/user-center/user-honor/bg-honor.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: #6ab834;
+  }
+}
+

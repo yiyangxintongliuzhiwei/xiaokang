@@ -1,0 +1,10 @@
+@function unit ($px) {
+  @return $px / 750px * 100vw;
+}
+
+@function oldUnit($px) {
+  @return $px / 1564px * 100vw;
+}
+@function newUnit($px) {
+  @return $px / 1080px * 100vw;
+}
